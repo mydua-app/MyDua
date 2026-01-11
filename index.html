@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>MyDua</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- VIDEO INTRO -->
+<div id="videoIntro">
+    <video id="introVideo" autoplay muted>
+        <source src="video/intro.mp4" type="video/mp4">
+        Tarayıcınız video desteklemiyor.
+    </video>
+</div>
+
+<!-- SITE -->
+<div id="siteContent" class="hidden">
+
+<header class="top-bar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="logo-circle">
+        <img src="images/logo.png" alt="MyDua Logo">
+    </div>
+</header>
+
+<nav id="sideMenu">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="#">Kur’an Duaları</a>
+    <a href="#">Hadis Duaları</a>
+</nav>
+
+<main>
+    <h1>MyDua</h1>
+    <p>
+        Kur’an-ı Kerim ve Hadis-i Şeriflerde yer alan
+        sahih duaları sade ve ferah bir arayüzle sunar.
+    </p>
+</main>
+
+<footer>
+    © 2026 MyDua
+</footer>
+
+</div>
+
+<script src="js/menu.js"></script>
+</body>
+      </html>
