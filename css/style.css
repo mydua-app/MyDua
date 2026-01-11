@@ -115,3 +115,9 @@ footer {
     padding: 20px;
     color: #777;
 }
+
+main p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
