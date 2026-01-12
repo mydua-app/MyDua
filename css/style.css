@@ -150,3 +150,40 @@ body {
   font-size: 14px;
   color: #777;
 }
+
+/* Aktif menü */
+.side-menu a.active {
+  background: #132c45;
+}
+
+/* Sayfa içeriği */
+.page {
+  max-width: 800px;
+  margin: 80px auto 40px;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+/* Ayırıcı */
+.divider {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Vizyon & Misyon */
+.vm {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .vm {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.vm-box h2 {
+  color: #0a2540;
+  margin-bottom: 10px;
+    }
