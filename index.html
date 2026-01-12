@@ -11,8 +11,17 @@
 <header class="top-bar">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <div class="logo-circle">
-        <img src="images/logo.png" alt="MyDua Logo">
+    <div class="right-box">
+        <div id="profileBox" class="profile-box" style="display:none;">
+            <span id="profileName"></span>
+            <button onclick="googleLogout()">Çıkış</button>
+        </div>
+
+        <button class="login-btn" onclick="googleLogin()">Google ile Giriş</button>
+
+        <div class="logo-circle">
+            <img src="images/logo.png" alt="MyDua Logo">
+        </div>
     </div>
 </header>
 
