@@ -12,47 +12,43 @@
     <div class="hamburger" onclick="toggleMenu()">☰</div>
 
     <div class="right-box">
-        <div id="profileBox" class="profile-box" style="display:none;">
-            <span id="profileName"></span>
-            <button onclick="googleLogout()">Çıkış</button>
+        <!-- Profil -->
+        <div class="profile-wrapper">
+            <div class="profile-icon" onclick="toggleProfileMenu()">👤</div>
+            <div id="profileMenu" class="profile-menu">
+                <button onclick="googleLogin()">Google ile Giriş</button>
+                <button onclick="googleLogout()">Çıkış</button>
+            </div>
         </div>
 
-        <button class="login-btn" onclick="googleLogin()">Google ile Giriş</button>
-
+        <!-- Logo -->
         <div class="logo-circle">
             <img src="images/logo.png" alt="MyDua Logo">
         </div>
     </div>
 </header>
 
-<nav id="sideMenu">
+<!-- Yan Menü -->
+<nav id="sideMenu" class="side-menu">
     <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
     <a href="quran.html">Kur'an-ı Kerim Duaları</a>
     <a href="hadis.html">Peygamberimiz'den Dualar</a>
     <a href="favoriler.html">Favorilerim</a>
     <a href="kuran.html">Kur'an-ı Kerim</a>
     <a href="hadisler.html">Hadisler</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
 </nav>
 
-<main class="container">
+<main class="content">
     <h1>MyDua</h1>
-    <p class="subtitle">
-        Kur'an-ı Kerim ve Hadis-i Şeriflerde yer alan sahih duaları
-        sade ve güvenilir bir şekilde sunar.
+    <p>
+        Kur’an-ı Kerim ve Hadis-i Şeriflerde yer alan sahih duaları
+        sade ve ferah bir arayüzle sunan açık kaynaklı bir platformdur.
     </p>
-
-    <div class="auth-buttons">
-        <button onclick="googleLogin()">Google ile Giriş</button>
-        <button onclick="googleLogout()">Çıkış</button>
-    </div>
 </main>
-
-<footer>
-    © 2026 MyDua
-</footer>
 
 <script src="js/menu.js"></script>
 <script type="module" src="js/firebase.js"></script>
+
 </body>
     </html>
