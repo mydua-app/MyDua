@@ -1,4 +1,3 @@
-alert("FIREBASE YÜKLENDİ");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
 import {
   getAuth,
@@ -50,5 +49,22 @@ onAuthStateChanged(auth, (user) => {
   } else {
     menu.children[0].style.display = "block";
     menu.children[1].style.display = "none";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginBtn = document.getElementById("loginBtn");
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  if (loginBtn) {
+    loginBtn.addEventListener("click", () => {
+      signInWithRedirect(auth, provider);
+    });
+  }
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      signOut(auth);
+    });
   }
 });
