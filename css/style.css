@@ -120,3 +120,33 @@ body {
 .content h1 {
     margin-bottom: 10px;
 }
+
+.hero {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #0a2540; /* lacivert */
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #777;
+}
