@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -10,108 +10,21 @@ body {
     color: #0b1c2d;
 }
 
-/* ÜST BAR */
+/* Üst Bar */
 .top-bar {
-    height: 60px;
     background: #0b1c2d;
+    color: white;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 12px;
 }
 
-/* HAMBURGER */
 .hamburger {
-    font-size: 26px;
-    color: white;
+    font-size: 24px;
     cursor: pointer;
 }
-
-/* LOGO */
-.logo-circle {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.logo-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* DAİREYİ TAM DOLDURUR */
-}
-
-/* YAN MENÜ */
-#sideMenu {
-    position: fixed;
-    top: 0;
-    left: -260px;
-    width: 260px;
-    height: 100%;
-    background: #0b1c2d;
-    padding-top: 80px;
-    transition: 0.3s;
-    z-index: 1000;
-}
-
-#sideMenu.open {
-    left: 0;
-}
-
-#sideMenu a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-#sideMenu a:hover {
-    background: #132f4c;
-}
-
-/* ANA ALAN */
-.container {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #0b1c2d;
-}
-
-.subtitle {
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 30px;
-}
-
-/* GİRİŞ BUTONLARI */
-.auth-buttons button {
-    background: #0b1c2d;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    margin: 5px;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.auth-buttons button:hover {
-    background: #132f4c;
-}
-
-/* FOOTER */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    color: #666;
-    }
 
 .right-box {
     display: flex;
@@ -119,32 +32,91 @@ footer {
     gap: 10px;
 }
 
-.login-btn {
+/* Logo */
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
     background: white;
-    color: #0b1c2d;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 13px;
-    cursor: pointer;
 }
 
-.profile-box {
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profil */
+.profile-wrapper {
+    position: relative;
+}
+
+.profile-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    color: #0b1c2d;
     display: flex;
     align-items: center;
-    gap: 8px;
-    background: white;
-    color: #0b1c2d;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 13px;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.profile-box button {
-    background: #0b1c2d;
-    color: white;
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.profile-menu button {
+    width: 160px;
+    padding: 10px;
     border: none;
-    padding: 4px 8px;
-    border-radius: 4px;
+    background: white;
+    text-align: left;
     cursor: pointer;
-    }
+}
+
+.profile-menu button:hover {
+    background: #f0f0f0;
+}
+
+/* Yan Menü */
+.side-menu {
+    position: fixed;
+    top: 56px;
+    left: -220px;
+    width: 220px;
+    height: 100%;
+    background: #0b1c2d;
+    padding-top: 10px;
+    transition: 0.3s;
+}
+
+.side-menu a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    background: #132c45;
+}
+
+/* İçerik */
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    margin-bottom: 10px;
+}
