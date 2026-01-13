@@ -186,4 +186,18 @@ body {
 .vm-box h2 {
   color: #0a2540;
   margin-bottom: 10px;
-    }
+}
+
+.dua-card {
+  background: #f8f9fb;
+  border-left: 4px solid #0a2540;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.dua-okunus {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
