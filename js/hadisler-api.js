@@ -1,16 +1,18 @@
 const hadisList = document.getElementById("hadisList");
 const yenileBtn = document.getElementById("yenileHadisler");
 
-// Türkçe hadisleri getir
 function hadisleriGetir() {
   hadisList.innerHTML = "<p>Yükleniyor...</p>";
 
-  fetch("https://hadeethenc.com/api/v1/hadeeths/list/?language=tr&per_page=4&page=1")
-    .then(res => res.json())
-    .then(data => {
-      hadisList.innerHTML = "";
+  hadisList.innerHTML = "";
 
-      data.data.forEach(hadis => {
+  // 4 rastgele hadis al
+  for (let i = 0; i < 4; i++) {
+    fetch("https://hadeethenc.com/api/v1/hadeeths/random/?language=tr")
+      .then(res => res.json())
+      .then(data => {
+        const hadis = data.data;
+
         const card = document.createElement("div");
         card.className = "dua-card";
 
@@ -23,15 +25,15 @@ function hadisleriGetir() {
         `;
 
         hadisList.appendChild(card);
+      })
+      .catch(() => {
+        hadisList.innerHTML = "<p>Hadisler yüklenemedi.</p>";
       });
-    })
-    .catch(() => {
-      hadisList.innerHTML = "<p>Hadisler yüklenemedi.</p>";
-    });
+  }
 }
 
-// İlk yükleme
+// İlk açılış
 hadisleriGetir();
 
-// Yenile
+// Yenile butonu
 yenileBtn.addEventListener("click", hadisleriGetir);
