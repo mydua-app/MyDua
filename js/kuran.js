@@ -44,4 +44,4 @@ sureSelect.addEventListener("change", () => {
 function sesliOku(url) {
   const audio = new Audio(url);
   audio.play();
-                                                                          }
+}
