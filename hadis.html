@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Peygamberimiz'den Dualar | MyDua</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="right-box">
+    <div class="logo-circle">
+      <img src="images/logo.png" alt="MyDua Logo">
+    </div>
+  </div>
+</header>
+
+<nav id="sideMenu" class="side-menu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="hakkimizda.html">Hakkımızda</a>
+  <a href="quran.html">Kur’an-ı Kerim Duaları</a>
+  <a href="hadis.html" class="active">Peygamberimiz'den Dualar</a>
+  <a href="kuran.html">Kur’an-ı Kerim</a>
+  <a href="hadisler.html">Hadisler</a>
+</nav>
+
+<main class="page">
+  <h1>Peygamberimiz'den Dualar</h1>
+  <p class="page-desc">
+    Peygamber Efendimiz Hz. Muhammed’in (s.a.v.) hadislerde yer alan duaları
+  </p>
+
+  <div id="hadisGrid" class="dua-grid"></div>
+
+  <button id="yenileHadis" class="refresh-btn">🔄 Yenile</button>
+</main>
+
+<footer class="footer">
+  © 2026 MyDua. Tüm hakları saklıdır.
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/hadis-dualari.js"></script>
+</body>
+</html>
