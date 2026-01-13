@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Kur’an Duaları - MyDua</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Kur'an-ı Kerim Duaları | MyDua</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="top-bar">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="right-box">
     <div class="logo-circle">
-        <img src="images/logo.png" alt="MyDua Logo">
+      <img src="images/logo.png" alt="MyDua Logo">
     </div>
+  </div>
 </header>
 
-<nav id="sideMenu">
-    <a href="index.html">Ana Sayfa</a>
-    <a href="quran.html">Kur’an Duaları</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
+<nav id="sideMenu" class="side-menu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="hakkimizda.html">Hakkımızda</a>
+  <a href="quran.html" class="active">Kur’an-ı Kerim Duaları</a>
+  <a href="hadis.html">Peygamberimiz'den Dualar</a>
+  <a href="kuran.html">Kur’an-ı Kerim</a>
+  <a href="hadisler.html">Hadisler</a>
 </nav>
 
-<main>
-    <h1>Kur’an-ı Kerim’de Geçen Dualar</h1>
+<main class="page">
+  <h1>Kur’an-ı Kerim Duaları</h1>
+  <p class="page-desc">Kur’an-ı Kerim’de geçen ve dua niteliği taşıdığı kabul edilen ayetlerin listesi.</p>
 
-    <div id="duaList">
-        <p>Dualar yükleniyor...</p>
-    </div>
+  <div id="duaList" class="dua-list">
+    <p>Dualar yükleniyor...</p>
+  </div>
 </main>
 
-<footer>
-    © 2026 MyDua
+<footer class="footer">
+  © 2026 MyDua. Tüm hakları saklıdır.
 </footer>
 
 <script src="js/menu.js"></script>
+<script src="js/quran-dualari-api.js"></script>
 </body>
-</html>
+    </html>
