@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>MyDua</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>MyDua | Dua ile Rabbine Yaklaş</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- ÜST BAR -->
 <header class="top-bar">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-    <div class="right-box">
-        
-        <!-- Logo -->
-        <div class="logo-circle">
-            <img src="images/logo.png" alt="MyDua Logo">
-        </div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="right-box">
+    <div class="logo-circle">
+      <img src="images/logo.png" alt="MyDua Logo">
     </div>
+  </div>
 </header>
 
-<!-- Yan Menü -->
+<!-- YAN MENÜ -->
 <nav id="sideMenu" class="side-menu">
-    <a href="index.html">Ana Sayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="quran.html">Kur'an-ı Kerim Duaları</a>
-    <a href="hadis.html">Peygamberimiz'den Dualar</a>
-    <a href="kuran.html">Kur'an-ı Kerim</a>
-    <a href="hadisler.html">Hadisler</a>
+  <a href="index.html" class="active">Ana Sayfa</a>
+  <a href="hakkimizda.html">Hakkımızda</a>
+  <a href="quran.html">Kur’an-ı Kerim Duaları</a>
+  <a href="hadis.html">Peygamberimiz'den Dualar</a>
+  <a href="kuran.html">Kur’an-ı Kerim</a>
+  <a href="hadisler.html">Hadisler</a>
 </nav>
 
-<main class="hero">
-  <h1>MyDua</h1>
-  <p>
-    Kur'an-ı Kerim ve Hadis-i Şeriflerde yer alan sahih duaları
-    sade ve ferah bir arayüzle sunan açık kaynaklı bir platformdur.
-  </p>
+<!-- ANA İÇERİK -->
+<main class="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Dua, kulun Rabbi ile en samimi bağdır.</h1>
+    <p class="hero-desc">
+      Kur’an ve Sünnet’ten derlenmiş dualar ve ilmi içerikler
+    </p>
+
+    <p class="hero-hadis">
+      “Dua, ibadetin özüdür.” <span>(Hadis-i Şerif)</span>
+    </p>
+
+    <div class="hero-buttons">
+      <a href="quran.html" class="btn-outline">Kur’an Duaları</a>
+      <a href="hadis.html" class="btn-outline">Hadis Duaları</a>
+    </div>
+  </section>
+
+  <!-- HIZLI ERİŞİM -->
+  <section class="quick-links">
+    <div class="quick-card">
+      <h3>📖 Kur’an Duaları</h3>
+      <p>Kur’an-ı Kerim’de geçen dua ayetleri</p>
+    </div>
+
+    <div class="quick-card">
+      <h3>🕋 Hadis Duaları</h3>
+      <p>Peygamberimiz’den (s.a.s) dualar</p>
+    </div>
+
+    <div class="quick-card">
+      <h3>🧠 Dua Rehberi</h3>
+      <p>Dua ile ilgili genel meseleler</p>
+    </div>
+
+    <div class="quick-card">
+      <h3>📚 Hadisler</h3>
+      <p>Güvenilir kaynaklardan hadisler</p>
+    </div>
+  </section>
+
+  <!-- AYET VURGUSU -->
+  <section class="quote">
+    <p>
+      “Rabbiniz buyurdu ki: Bana dua edin, size icabet edeyim.”
+    </p>
+    <span>Mü’min, 40/60</span>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -43,7 +86,5 @@
 </footer>
 
 <script src="js/menu.js"></script>
-<script type="module" 
-
 </body>
     </html>
